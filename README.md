@@ -7,7 +7,16 @@ This repository contains code for testing the Category API using the Behave fram
 - Python 3.x
 - pip
 
-## Setup
+## Run tests via Github Actions
+- Tests can be run without setting up the project locally by running [github action workflow](https://github.com/rakesh9692/testing_api_bdd/actions/workflows/categories-api-testing.yaml) as shown below:
+![Github Actions to run feature tests](images/gha.png)
+
+- Here is an example of a test run via github actions:
+
+![Github Actions to test run example output](images/gha_output.png)
+
+
+## Setup locally
 
 1. Clone the repository:
 
@@ -40,5 +49,5 @@ This command will run all the test scenarios defined in the category.feature fil
 
 The behavior-driven tests are defined in the category.feature file, and the corresponding step implementations are in the category.py file.
 
-  1. To modify the test scenarios, update the feature file (category.feature) with the desired scenarios and assertions.
-  2. To modify the step implementations, update the step file (category.py) with the necessary code changes.
+  1. To modify the test scenarios, update (or add more feature files) the feature file (features/category.feature) with the desired scenarios and assertions.
+  2. To modify the step implementations, update the step file (features/steps/category.py) with the necessary code changes.
