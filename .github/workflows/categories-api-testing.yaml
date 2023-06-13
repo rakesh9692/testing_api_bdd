@@ -1,4 +1,4 @@
-name: Behave Tests
+name: Feature Testing Pipeline
 
 on:
   push:
